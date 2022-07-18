@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a0c784d1ee.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="src/index.js"></script>
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="container card full-page" style="width: 60%;">
+      <div class="card-body">
+
+        <form class="search-city-form">
+          <div class="row">
+            <div class="col-6">
+              <div class="input-group mb-3" id="enterCityForm">
+                <input
+                  type="search"
+                  class="form-control search-form"
+                  placeholder="Enter the city"
+                  autocomplete="off"
+                  autofocus="on"
+                />
+              </div>
+            </div>
+            <div class="col-auto">
+              <input
+                class="form-control btn-weather"
+                type="submit"
+                value="Check weather"
+              />
+          </div>
+        </form>
+        <div class="col-auto">
+          <button class="my-location btn-weather">
+            <i class="fa-solid fa-location-dot"></i>
+          </button>
+        </div>
+
+        <div class="header">
+          <div class="row">
+            <div class="col-8">
+              <h1 class="main-temperature">
+                <span class="current-temp">
+                  22
+                </span>
+                <span class="temp-unit">
+                  <a class="celsius-unit" href="#">
+                    °C
+                  </a>
+                  |
+                  <a class="fahrenheit-unit" href="#">
+                    °F
+                  </a>
+                </span>
+              </h1>
+            </div>
+            <div class="col">
+              <span class="current-date">Monday 16:00</span>
+              <p class="temperature-info">
+                Humidity:<span class="humidity">70%</span><br />Wind speed:<span
+                  class="wind"
+                  >10 km/h</span
+                ><br /><span class="description">Sunny</span>
+              </p>
+            </div>
+          </div>
+
+          <h1 class="main-city">Kyiv</h1>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col day-of-week">Mon</div>
+          <div class="col day-of-week">Tue</div>
+          <div class="col day-of-week">Wed</div>
+          <div class="col day-of-week">Thu</div>
+          <div class="col day-of-week">Fri</div>
+        </div>
+        <div class="row">
+          <div class="col weather-icon">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div class="col weather-icon">
+            <i class="fa-solid fa-cloud"></i>
+          </div>
+          <div class="col weather-icon">
+            <i class="fa-solid fa-cloud-sun"></i>
+          </div>
+          <div class="col weather-icon">
+            <i class="fa-solid fa-sun"></i>
+          </div>
+          <div class="col weather-icon">
+            <i class="fa-solid fa-sun"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col week-temperature">25°C</div>
+          <div class="col week-temperature">22°C</div>
+          <div class="col week-temperature">24°C</div>
+          <div class="col week-temperature">27°C</div>
+          <div class="col week-temperature">28°C</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
