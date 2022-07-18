@@ -1,3 +1,10 @@
+hr {
+  border-top: 3px solid #000;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
 .btn-weather {
   padding: 6px 10px;
   border-radius: 10px;
@@ -14,10 +21,6 @@
 }
 .search-city-form {
   margin-top: 20px;
-}
-a {
-  text-decoration: none;
-  color: black;
 }
 
 .card {
@@ -51,9 +54,7 @@ a {
   left: -50px;
   font-weight: normal;
 }
-hr {
-  border-top: 3px solid #000;
-}
+
 .day-of-week,
 .weather-icon,
 .week-temperature {
@@ -83,4 +84,13 @@ hr {
 .my-location:hover {
   background: #ac7d88;
   color: #fff;
+}
+.footer {
+  text-align: center;
+  font-size: 14px;
+}
+.footer-link {
+  color: #6f4c5b;
+  font-weight: bold;
+  text-decoration: underline;
 }
